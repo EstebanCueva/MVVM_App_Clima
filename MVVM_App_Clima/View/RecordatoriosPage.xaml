@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MVVM_App_Clima.ViewModel"
+             x:Class="MVVM_App_Clima.View.RecordatoriosPage"
+             x:Name="PaginaRecordatorios"
+             Title="RecordatoriosPage">
+    
+    <VerticalStackLayout Padding="20">
+        <Entry Placeholder="Texto" Text="{Binding NuevoTexto}" />
+        <TimePicker Time="{Binding NuevoFechaHora}" />
+        <Switch IsToggled="{Binding NuevoActivo}" />
+        <Button Text="Agregar" Command="{Binding AgregarRecordatorioCommand}" />
+
+        <CollectionView ItemsSource="{Binding Lista}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItem Text="Eliminar"
+               Command="{Binding BindingContext.EliminarRecordatorioCommand, Source={x:Reference PaginaRecordatorios}}"
+               CommandParameter="{Binding .}" />
+                        </SwipeView.RightItems>
+                        <Frame Padding="10" Margin="5" BackgroundColor="LightGray">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Texto}" FontAttributes="Bold" />
+                                <Label Text="{Binding FechaHora}" />
+                                <Label Text="{Binding Activo, StringFormat='Activo: {0}'}" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>
