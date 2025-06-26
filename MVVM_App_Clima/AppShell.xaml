@@ -7,13 +7,21 @@
     Title="MVVM_App_Clima">
 
     <ShellContent
-        Title="Home"
+        Title="About"
         ContentTemplate="{DataTemplate local:AboutPage}"
-        Route="MainPage" />
+        Route="About" />
 
     <ShellContent
     Title="Weather"
     ContentTemplate="{DataTemplate local:WeatherView}"
     Route="WeatherView" />
+    <ShellContent
+    Title="Recordatorios"
+    ContentTemplate="{DataTemplate local:RecordatoriosPage}"
+    Route="Recordatorios" />
+    <ShellContent
+    Title="Notas"
+    ContentTemplate="{DataTemplate local:NotesPage}"
+    Route="Notas" />
 
 </Shell>
