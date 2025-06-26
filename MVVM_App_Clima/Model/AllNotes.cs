@@ -4,11 +4,11 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Android.Provider.ContactsContract.CommonDataKinds;
+//using static Android.Provider.ContactsContract.CommonDataKinds;
 
 namespace MVVM_App_Clima.Model
 {
-    internal class AllNotes
+    public class AllNotes
     {
         public ObservableCollection<Note> Notes { get; set; } = new ObservableCollection<Note>();
 

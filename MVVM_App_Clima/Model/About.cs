@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVVM_App_Clima.Model
 {
-    internal class About
+    public class About
     {
         public string Title => AppInfo.Name;
         public string Version => AppInfo.VersionString;

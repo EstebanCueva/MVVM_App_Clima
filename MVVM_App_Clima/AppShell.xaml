@@ -7,8 +7,8 @@
     Title="MVVM_App_Clima">
 
     <ShellContent
-        Title="Recordatorios"
-        ContentTemplate="{DataTemplate local:RecordatoriosPage}"
+        Title="Home"
+        ContentTemplate="{DataTemplate local:NotesPage}"
         Route="MainPage" />
 
 </Shell>

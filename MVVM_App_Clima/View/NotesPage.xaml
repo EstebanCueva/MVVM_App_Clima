@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MVVM_App_Clima.ViewModel"
+             x:Class="MVVM_App_Clima.View.NotesPage"
+             Title="NotesPage">
+    <ContentPage.BindingContext>
+        <viewModels:NotesViewModel />
+    </ContentPage.BindingContext>
+        <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Entry Placeholder="Escribe una nota..."
+                   Text="{Binding NewNoteText}" />
+
+            <Button Text="Agregar Nota"
+                    Command="{Binding AddNoteCommand}" />
+
+            <CollectionView ItemsSource="{Binding Notes}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="Gray" CornerRadius="10" Padding="10" Margin="5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Date}" FontSize="12" TextColor="Gray"/>
+                                <Label Text="{Binding Text}" FontSize="16"/>
+                                <Button Text="Eliminar" 
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:NotesViewModel}}, Path=DeleteNoteCommand}" 
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="Red"
+                                        TextColor="White"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
