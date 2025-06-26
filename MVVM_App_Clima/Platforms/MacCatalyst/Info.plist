@@ -16,6 +16,7 @@
 		<integer>2</integer>
 	</array>
 	<key>UIRequiredDeviceCapabilities</key>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<array>
 		<string>arm64</string>
 	</array>
@@ -24,6 +25,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>Fill in a reason why your app needs access to location.</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

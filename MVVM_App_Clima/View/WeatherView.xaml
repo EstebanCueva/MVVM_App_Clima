@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MVVM_App_Clima.ViewModel"
+             x:Class="MVVM_App_Clima.View.WeatherView"
+             Title="Clima Actual"
+             BackgroundColor="#aee1f9">
+
+    <ContentPage.BindingContext>
+        <vm:WeatherViewModels />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="30" Spacing="25" HorizontalOptions="Center">
+
+        <Label Text="Clima Actual"
+               FontSize="32"
+               FontAttributes="Bold"
+               TextColor="Navy"
+               HorizontalOptions="Center" />
+
+        <!-- Hora -->
+        <Frame BackgroundColor="#fff9c4" CornerRadius="12" Padding="12">
+            <Label Text="{Binding WeatherDataInfo.current.time, StringFormat='Hora: {0}'}"
+                   FontSize="20"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+        </Frame>
+
+        <!-- Temperatura -->
+        <Frame BackgroundColor="#ffe0b2" CornerRadius="12" Padding="12">
+            <Label Text="{Binding WeatherDataInfo.current.temperature_2m, StringFormat='Temperatura: {0} °C'}"
+                   FontSize="22"
+                   TextColor="#e65100"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+        </Frame>
+
+        <!-- Humedad -->
+        <Frame BackgroundColor="#c8e6c9" CornerRadius="12" Padding="12">
+            <Label Text="{Binding WeatherDataInfo.current.relative_humidity_2m, StringFormat='Humedad: {0}%'}"
+                   FontSize="22"
+                   TextColor="#2e7d32"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+        </Frame>
+
+        <!-- Lluvia -->
+        <Frame BackgroundColor="#bbdefb" CornerRadius="12" Padding="12">
+            <Label Text="{Binding WeatherDataInfo.current.rain, StringFormat='Lluvia: {0} mm'}"
+                   FontSize="22"
+                   TextColor="#1565c0"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>

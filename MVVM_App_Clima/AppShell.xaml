@@ -11,4 +11,9 @@
         ContentTemplate="{DataTemplate local:RecordatoriosPage}"
         Route="MainPage" />
 
+    <ShellContent
+    Title="Weather"
+    ContentTemplate="{DataTemplate local:WeatherView}"
+    Route="WeatherView" />
+
 </Shell>
