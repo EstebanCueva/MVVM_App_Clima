@@ -26,7 +26,7 @@ namespace MVVM_App_Clima.ViewModel
             File.WriteAllText(filename, NewNoteText);
 
             NewNoteText = string.Empty;
-            _allNotes.LoadNotes(); // Recargar notas
+            _allNotes.LoadNotes(); 
         }
 
         [RelayCommand]
