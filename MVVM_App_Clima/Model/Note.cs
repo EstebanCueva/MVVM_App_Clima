@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVVM_App_Clima.Model
 {
-    internal class Note
+    public class Note
     {
         public string Filename { get; set; }
         public string Text { get; set; }

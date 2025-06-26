@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM_App_Clima.View.AboutPage"
+             Title="AboutPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Persona 1 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <VerticalStackLayout Spacing="10">
+                    <Image Source="persona1.png" HeightRequest="150" WidthRequest="150" Aspect="AspectFill" />
+                    <Label Text="Esteban Cueva" FontAttributes="Bold" FontSize="18" />
+                    <Label Text="Edad: 21 años" />
+                    <Label Text="Deporte favorito: Tenis Y Golf" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Persona 2 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <VerticalStackLayout Spacing="10">
+                    <Image Source="persona2.png" HeightRequest="150" WidthRequest="150" Aspect="AspectFill" />
+                    <Label Text="Stheeven Quishpe Morales" FontAttributes="Bold" FontSize="18" />
+                    <Label Text="Edad: 20 años" />
+                    <Label Text="Deporte favorito: Box" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Persona 3 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <VerticalStackLayout Spacing="10">
+                    <Image Source="persona3.png" HeightRequest="150" WidthRequest="150" Aspect="AspectFill" />
+                    <Label Text="Miguel" FontAttributes="Bold" FontSize="18" />
+                    <Label Text="Edad: 22 años" />
+                    <Label Text="Deporte favorito: Natación" />
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

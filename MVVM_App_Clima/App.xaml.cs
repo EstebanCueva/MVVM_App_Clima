@@ -5,11 +5,7 @@
         public App()
         {
             InitializeComponent();
-        }
-
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new AppShell());
+            MainPage = new AppShell(); // Esto activa el Shell y muestra la barra
         }
     }
 }

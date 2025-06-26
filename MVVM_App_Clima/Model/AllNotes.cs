@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MVVM_App_Clima.Model
 {
-    internal class AllNotes
+    public class AllNotes
     {
         public ObservableCollection<Note> Notes { get; set; } = new ObservableCollection<Note>();
 
