@@ -9,7 +9,7 @@
             <!-- Persona 1 -->
             <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
                 <VerticalStackLayout Spacing="10">
-                    <Image Source="persona1.jpg" HeightRequest="150" WidthRequest="150" Aspect="AspectFill" />
+                    <Image Source="persona1.png" HeightRequest="150" WidthRequest="150" Aspect="AspectFill" />
                     <Label Text="Esteban Cueva" FontAttributes="Bold" FontSize="18" />
                     <Label Text="Edad: 21 años" />
                     <Label Text="Deporte favorito: Tenis Y Golf" />
@@ -19,7 +19,7 @@
             <!-- Persona 2 -->
             <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
                 <VerticalStackLayout Spacing="10">
-                    <Image Source="persona2.jpg" HeightRequest="150" WidthRequest="150" Aspect="AspectFill" />
+                    <Image Source="persona2.png" HeightRequest="150" WidthRequest="150" Aspect="AspectFill" />
                     <Label Text="Stheeven Quishpe Morales" FontAttributes="Bold" FontSize="18" />
                     <Label Text="Edad: 20 años" />
                     <Label Text="Deporte favorito: Box" />
@@ -29,7 +29,7 @@
             <!-- Persona 3 -->
             <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
                 <VerticalStackLayout Spacing="10">
-                    <Image Source="persona3.jpg" HeightRequest="150" WidthRequest="150" Aspect="AspectFill" />
+                    <Image Source="persona3.png" HeightRequest="150" WidthRequest="150" Aspect="AspectFill" />
                     <Label Text="Miguel" FontAttributes="Bold" FontSize="18" />
                     <Label Text="Edad: 22 años" />
                     <Label Text="Deporte favorito: Natación" />
